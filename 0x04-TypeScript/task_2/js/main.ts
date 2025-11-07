@@ -54,5 +54,8 @@ function executeWork(employee: Director | Teacher): string {
     }
 }
 
-console.log(executeWork(createEmployee(200)));
-console.log(executeWork(createEmployee(1000)));
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects) {
+    return `Teaching ${todayClass}`;
+}
